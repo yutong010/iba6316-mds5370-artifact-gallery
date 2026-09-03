@@ -15,6 +15,9 @@ window.SITE_CONFIG = {
   // Named in the footer line: "本站由郭羽童维护，只收录…作品集。"
   collection: "IBA6316·MDS5370·Fall2026",
 
+  // Shown in the footer as a mailto link
+  contactEmail: "guoyutong@cuhk.edu.cn",
+
   courseName: {
     en: "Generative AI for Business",
     zh: "生成式人工智能商业应用",
