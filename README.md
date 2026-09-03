@@ -1,7 +1,7 @@
 # IBA6316 · MDS5370 — Student Artifact Gallery, Fall 2026
 
 Public index of artifacts built by students in *Generative AI for Business*
-(IBA6316 / MDS5370), CUHK-Shenzhen SME. Every entry links to something you can open.
+(IBA6316 / MDS5370), CUHK-Shenzhen SFI. Every entry links to something you can open.
 
 Live: not published yet. See **Going live** below.
 

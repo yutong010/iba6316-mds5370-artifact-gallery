@@ -10,7 +10,10 @@ window.SITE_CONFIG = {
   term: "2026F",
 
   // Shown in the small monospace line above the title
-  kicker: "IBA6316 · MDS5370 · CUHK-Shenzhen · SME",
+  kicker: "IBA6316 · MDS5370 · CUHK-Shenzhen · SFI",
+
+  // Named in the footer line: "本站由郭羽童维护，只收录…作品集。"
+  collection: "IBA6316·MDS5370·Fall2026",
 
   courseName: {
     en: "Generative AI for Business",

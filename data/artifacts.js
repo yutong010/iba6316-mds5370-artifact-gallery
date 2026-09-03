@@ -28,7 +28,8 @@
    source       "lab 1" | "AS1" | "AS2" | "project"
    title        the artifact's own name (not translated)
    one_liner    { en, zh }  <= 18 words / 40 字
-   type         workflow | skill | agent | website | app | dataset | other
+   type         website | agent | workflow | chatbot | skill | others
+   +            controlled list. Add a value only with a written reason (spec 3.3).
    platform     WorkBuddy | Dify | Colab | GitHub Pages | Streamlit | ...
    ai_stack     array of model / tool names
    url          the public address. This is the point of the whole site.
