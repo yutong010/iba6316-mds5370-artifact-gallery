@@ -30,9 +30,8 @@ window.SITE_CONFIG = {
   // Cross-links (spec section 2: the sites do not merge, but they reference each other)
   links: {
     pastProjects: "https://yutong010.github.io/sme-ai-project-gallery/",
-    // The other course's artifact gallery. Left null until that site is live —
-    // render.js hides the link rather than shipping a dead one.
-    siblingGallery: null,
+    // The other course's artifact gallery, live since 2026-09-03.
+    siblingGallery: "https://yutong010.github.io/mis3011-artifact-gallery/",
     siblingLabel: { en: "MIS3011 gallery", zh: "MIS3011 作品站" },
   },
 };
