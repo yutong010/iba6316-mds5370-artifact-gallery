@@ -26,6 +26,8 @@
    ── FIELDS ───────────────────────────────────────────────────────────────
    id           "2026F-PG-lab1-01"   term-level-source-sequence
    week         teaching week number. Entries are grouped under "Week N".
+                null = no heading (used for in-class shares).
+   shared       optional, not rendered: when a class share was presented, e.g. "WK3 sharing"
    source       "lab 1" | "AS1" | "AS2" | "project"  — shown as a tag
    title        the artifact's own name (not translated)
    one_liner    { en, zh }  <= 18 words / 40 字
@@ -67,36 +69,17 @@
 
 window.ARTIFACTS = [
 
-  /* ── Week 2: work students volunteered to show, not a graded submission.
-     source "class share" is an addition to the controlled list (spec 3.3):
-     these came from an in-class presentation and a student's own offer, and
-     none of lab N / AS1 / AS2 / project describes that honestly.
+  /* ── In-class shares: work students volunteered to present, not a graded
+     submission. source "class share" is an addition to the controlled list
+     (spec 3.3): none of lab N / AS1 / AS2 / project describes that honestly.
+     week is null on purpose — the instructor (2026-09-14) wants no "Week N"
+     heading over these. The week each was presented is kept in `shared`.
      ────────────────────────────────────────────────────────────────────── */
 
   {
-    id: "2026F-PG-share-01",
-    week: 2,
-    source: "class share",
-    title: "CUHKSZ Mate",
-    one_liner: {
-      en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
-      zh: "帮港中深同学在匿名的前提下，为一场活动找到聊得来的搭子。",
-    },
-    type: "website",
-    platform: "Web app",
-    ai_stack: ["Codex", "Cursor", "Kimi K3"],
-    url: "https://cuhkmate.cn",
-    consent: "granted",
-    credit: "Linhan",
-    role: "student",
-    status: "live",
-    last_checked: "2026-09-14",
-    screenshot: null,
-    confidence: null,
-  },
-  {
     id: "2026F-PG-share-02",
-    week: 2,
+    week: null,
+    shared: "WK3 sharing",
     source: "class share",
     title: "VoiceLoop",
     one_liner: {
@@ -117,7 +100,8 @@ window.ARTIFACTS = [
   },
   {
     id: "2026F-PG-share-03",
-    week: 2,
+    week: null,
+    shared: "WK3 sharing",
     source: "class share",
     title: "AI Daily",
     one_liner: {
@@ -132,6 +116,28 @@ window.ARTIFACTS = [
     url: "https://lucas-learner.github.io/ai-daily/",
     consent: "granted",
     credit: "ZHANG Xuyang",
+    role: "student",
+    status: "live",
+    last_checked: "2026-09-14",
+    screenshot: null,
+    confidence: null,
+  },
+  {
+    id: "2026F-PG-share-01",
+    week: null,
+    shared: "WK2 sharing",
+    source: "class share",
+    title: "CUHKSZ Mate",
+    one_liner: {
+      en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
+      zh: "帮港中深同学在匿名的前提下，为一场活动找到聊得来的搭子。",
+    },
+    type: "website",
+    platform: "Web app",
+    ai_stack: ["Codex", "Cursor", "Kimi K3"],
+    url: "https://cuhkmate.cn",
+    consent: "granted",
+    credit: "LI Linhan",
     role: "student",
     status: "live",
     last_checked: "2026-09-14",
