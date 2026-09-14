@@ -67,8 +67,76 @@
 
 window.ARTIFACTS = [
 
-  /* Nothing here yet. The page renders its empty state until the first record
-     lands. Add entries at the top of this array using the template above.
-     PG artifacts start arriving once the first lab is submitted. */
+  /* ── Week 2: work students volunteered to show, not a graded submission.
+     source "class share" is an addition to the controlled list (spec 3.3):
+     these came from an in-class presentation and a student's own offer, and
+     none of lab N / AS1 / AS2 / project describes that honestly.
+     ────────────────────────────────────────────────────────────────────── */
+
+  {
+    id: "2026F-PG-share-01",
+    week: 2,
+    source: "class share",
+    title: "CUHKSZ Mate",
+    one_liner: {
+      en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
+      zh: "帮港中深同学在匿名的前提下，为一场活动找到聊得来的搭子。",
+    },
+    type: "website",
+    platform: "Web app",
+    ai_stack: ["Codex", "Cursor", "Kimi K3"],
+    url: "https://cuhkmate.cn",
+    consent: "granted",
+    credit: "Linhan",
+    role: "student",
+    status: "live",
+    last_checked: "2026-09-14",
+    screenshot: null,
+    confidence: null,
+  },
+  {
+    id: "2026F-PG-share-02",
+    week: 2,
+    source: "class share",
+    title: "VoiceLoop",
+    one_liner: {
+      en: "Lets anyone who records meetings on an iPhone get transcripts, structured minutes and weekly reports automatically.",
+      zh: "让用 iPhone 录会议的人自动拿到转录、结构化纪要和周报。",
+    },
+    type: "workflow",
+    platform: "GitHub",
+    ai_stack: ["Qwen3-ASR", "Kimi", "Codex"],
+    url: "https://github.com/Lucas-learner/voiceloop",
+    consent: "granted",
+    credit: "ZHANG Xuyang",
+    role: "student",
+    status: "live",
+    last_checked: "2026-09-14",
+    screenshot: null,
+    confidence: null,
+  },
+  {
+    id: "2026F-PG-share-03",
+    week: 2,
+    source: "class share",
+    title: "AI Daily",
+    one_liner: {
+      en: "Gives readers one deduplicated, source-checked AI industry briefing every morning, built and published automatically.",
+      zh: "每天早上自动给读者一份去重、核对过信源的 AI 行业日报。",
+    },
+    type: "website",
+    platform: "GitHub Pages",
+    ai_stack: ["Kimi Code"],
+    // The live site, not the repo: the site is the thing you open (spec 5).
+    // Source: https://github.com/Lucas-learner/ai-daily
+    url: "https://lucas-learner.github.io/ai-daily/",
+    consent: "granted",
+    credit: "ZHANG Xuyang",
+    role: "student",
+    status: "live",
+    last_checked: "2026-09-14",
+    screenshot: null,
+    confidence: null,
+  },
 
 ];
