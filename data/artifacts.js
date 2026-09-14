@@ -74,8 +74,32 @@ window.ARTIFACTS = [
      (spec 3.3): none of lab N / AS1 / AS2 / project describes that honestly.
      week is null on purpose — the instructor (2026-09-14) wants no "Week N"
      heading over these. The week each was presented is kept in `shared`.
+     ORDER: in the order they were presented, earliest first — so a new share
+     goes at the BOTTOM of this block, not the top (instructor, 2026-09-14).
      ────────────────────────────────────────────────────────────────────── */
 
+  {
+    id: "2026F-PG-share-01",
+    week: null,
+    shared: "WK2 sharing",
+    source: "class share",
+    title: "CUHKSZ Mate",
+    one_liner: {
+      en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
+      zh: "帮港中深同学在匿名的前提下，为一场活动找到聊得来的搭子。",
+    },
+    type: "website",
+    platform: "Web app",
+    ai_stack: ["Codex", "Cursor", "Kimi K3"],
+    url: "https://cuhkmate.cn",
+    consent: "granted",
+    credit: "LI Linhan",
+    role: "student",
+    status: "live",
+    last_checked: "2026-09-14",
+    screenshot: null,
+    confidence: null,
+  },
   {
     id: "2026F-PG-share-02",
     week: null,
@@ -116,28 +140,6 @@ window.ARTIFACTS = [
     url: "https://lucas-learner.github.io/ai-daily/",
     consent: "granted",
     credit: "ZHANG Xuyang",
-    role: "student",
-    status: "live",
-    last_checked: "2026-09-14",
-    screenshot: null,
-    confidence: null,
-  },
-  {
-    id: "2026F-PG-share-01",
-    week: null,
-    shared: "WK2 sharing",
-    source: "class share",
-    title: "CUHKSZ Mate",
-    one_liner: {
-      en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
-      zh: "帮港中深同学在匿名的前提下，为一场活动找到聊得来的搭子。",
-    },
-    type: "website",
-    platform: "Web app",
-    ai_stack: ["Codex", "Cursor", "Kimi K3"],
-    url: "https://cuhkmate.cn",
-    consent: "granted",
-    credit: "LI Linhan",
     role: "student",
     status: "live",
     last_checked: "2026-09-14",
