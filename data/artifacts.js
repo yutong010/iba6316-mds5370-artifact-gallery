@@ -4,8 +4,9 @@
    条目维护只改这个文件，不要去改 index.html。
 
    ── ADDING ONE ───────────────────────────────────────────────────────────
-   Copy the template at the bottom of this comment, paste it at the TOP of the
-   ARTIFACTS array (newest first), fill it in, save, commit.
+   Copy the template at the bottom of this comment, paste it at the BOTTOM of
+   the ARTIFACTS array, fill it in, save, commit. The page shows entries in
+   file order, earliest first (instructor, 2026-09-14).
 
    ── THE FOUR RULES THAT MATTER ───────────────────────────────────────────
    1. consent MUST be "granted" or the entry does not render. No exceptions,
@@ -25,10 +26,13 @@
 
    ── FIELDS ───────────────────────────────────────────────────────────────
    id           "2026F-PG-lab1-01"   term-level-source-sequence
-   week         teaching week number. Entries are grouped under "Week N".
-                null = no heading (used for in-class shares).
-   shared       optional, not rendered: when a class share was presented, e.g. "WK3 sharing"
-   source       "lab 1" | "AS1" | "AS2" | "project"  — shown as a tag
+   week         teaching week number. Feeds the source tag for lab / sharing.
+   source       "lab" | "sharing" | "AS1" | "AS2" | "project"
+                shown as the first, filled tag on each entry:
+                lab + week 3  -> "WK3 Lab"        sharing + week 2 -> "WK2 Sharing"
+                AS1 -> "Assignment 1"   AS2 -> "Assignment 2"   project -> "Group Project"
+                "sharing" = work a student volunteered to present in class, not a
+                graded submission (added 2026-09-14 — none of the others fit).
    title        the artifact's own name (not translated)
    one_liner    { en, zh }  <= 18 words / 40 字
    type         website | agent | workflow | chatbot | skill | others
@@ -49,8 +53,7 @@
    {
      id: "2026F-PG-lab1-01",
      week: 1,
-     week: 1,
-    source: "lab 1",
+     source: "lab",
      title: "",
      one_liner: { en: "", zh: "" },
      type: "website",
@@ -69,20 +72,10 @@
 
 window.ARTIFACTS = [
 
-  /* ── In-class shares: work students volunteered to present, not a graded
-     submission. source "class share" is an addition to the controlled list
-     (spec 3.3): none of lab N / AS1 / AS2 / project describes that honestly.
-     week is null on purpose — the instructor (2026-09-14) wants no "Week N"
-     heading over these. The week each was presented is kept in `shared`.
-     ORDER: in the order they were presented, earliest first — so a new share
-     goes at the BOTTOM of this block, not the top (instructor, 2026-09-14).
-     ────────────────────────────────────────────────────────────────────── */
-
   {
     id: "2026F-PG-share-01",
-    week: null,
-    shared: "WK2 sharing",
-    source: "class share",
+    week: 2,
+    source: "sharing",
     title: "CUHKSZ Mate",
     one_liner: {
       en: "Helps CUHK-Shenzhen students find a compatible activity partner through anonymous, agent-simulated matching.",
@@ -102,9 +95,8 @@ window.ARTIFACTS = [
   },
   {
     id: "2026F-PG-share-02",
-    week: null,
-    shared: "WK3 sharing",
-    source: "class share",
+    week: 3,
+    source: "sharing",
     title: "VoiceLoop",
     one_liner: {
       en: "Lets anyone who records meetings on an iPhone get transcripts, structured minutes and weekly reports automatically.",
@@ -124,9 +116,8 @@ window.ARTIFACTS = [
   },
   {
     id: "2026F-PG-share-03",
-    week: null,
-    shared: "WK3 sharing",
-    source: "class share",
+    week: 3,
+    source: "sharing",
     title: "AI Daily",
     one_liner: {
       en: "Gives readers one deduplicated, source-checked AI industry briefing every morning, built and published automatically.",
